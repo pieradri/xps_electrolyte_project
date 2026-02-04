@@ -18,7 +18,7 @@ To submit job scripts to the SLURM queuing system:
   sbatch <_script_name_>
 </pre>
 
-Example of SLURM submission script:
+Example of SLURM submission script (parallel MPI execution over 4 processors):
 <pre>
 #!/bin/bash
 #SBATCH -A KBTX16VT2603

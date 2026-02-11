@@ -1,0 +1,5 @@
+NAME          FORMULA        C1      C2      C3      C4      C5
+acetone       c2oh4          193.88  290.77
+acetonitrile  c2nh3          
+acetic acid   c2o2h4
+glycine       c2o2nh5

@@ -1,5 +1,12 @@
-NAME          FORMULA        C1      C2      C3      C4      C5
-acetone       c2oh4          193.88  290.77
-acetonitrile  c2nh3          
-acetic acid   c2o2h4
-glycine       c2o2nh5
+NAME            FORMULA        C1      C2      C3        ref.
+acetone         c2oh4          293.88  290.77            (1)
+acetonitrile    c2nh3          292.60  292.88            (1)
+acetic acid     c2o2h4         295.35  291.55            (1)
+glycine         c2o2nh5        295.2   292.3             (1)
+acrolein        c3h4o          287.95  285.75  285.05    (2)
+acrilic acid    c3h4o2         290.65  286.90  286.15    (2)
+propanoic acid  c3h6o2         290.90  287.00  286.00    (2)
+
+References:
+1. https://doi.org/10.1021/acs.jpclett.9b03423
+2. https://doi.org/10.1016/0039-6028(95)01254-0

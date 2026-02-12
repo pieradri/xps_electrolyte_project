@@ -25,7 +25,7 @@ Orca input:
 </pre>
 
 Use the final geometry from the previous optimization as "*opt.xyz*" input.
-The keyworkd in the %output section prints the composition of the converged MOs. Look at them carefully!
+The keyword in the *%output* section prints the composition of the converged MOs. Look at them carefully!
 
 ## 3) Z+1 Δ-SCF
 Orca input:

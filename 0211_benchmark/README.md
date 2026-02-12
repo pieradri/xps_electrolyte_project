@@ -59,7 +59,7 @@ end
 * xyzfile 0 1 opt.xyz
 </pre>
 
-The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation. In order to choose the *IonizeAlpha" value, look at the orbitals composition.
+The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation. In order to choose the *IonizeAlpha* value, look at the orbitals composition.
 
 ## 4) IP-EOM-CCSD
 Orca input:

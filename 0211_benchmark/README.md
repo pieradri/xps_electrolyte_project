@@ -10,6 +10,8 @@ Orca input:
 * xyzfile 0 1 molecule.xyz
 </pre>
 
+Starting geometriies in xyz format can be found in the directory "*molecules*".
+
 ## 2) SCF (orbital energies)
 Orca input:
 <pre>

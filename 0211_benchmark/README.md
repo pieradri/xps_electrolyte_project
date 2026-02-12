@@ -59,6 +59,8 @@ end
 * xyzfile 0 1 opt.xyz
 </pre>
 
+The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation. In order to choose the *IonizeAlpha" value, look at the orbitals composition.
+
 ## 4) IP-EOM-CCSD
 Orca input:
 <pre>
@@ -77,10 +79,12 @@ Orca input:
  CVSEP true
  DoCVS true
  DoCore true
- corehole 5
+ CoreHole 5
  printlevel 3
  maxiter 500
 end
 
 * xyzfile 0 1 opt.xyz
 </pre>
+
+The keyword *NRoots* specifies the number of calculated ionized states. The two values in *CVSOrb* limit the orbitals window for core-valence separation. *CoreHole* is the 1st state from which roots are counted. The *IP-EOM-DLPNO-CCSD* approximation can be substituted with *bt-PNO-IP-EOM-CCSD* for more accurate results, but the calculation may be much slower!

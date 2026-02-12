@@ -10,7 +10,7 @@ Orca input:
 * xyzfile 0 1 molecule.xyz
 </pre>
 
-Starting geometriies in xyz format can be found in the directory "*molecules*".
+Starting geometries in xyz format can be found in the directory "*molecules*".
 
 ## 2) SCF (orbital energies)
 Orca input:
@@ -23,6 +23,9 @@ Orca input:
 
 * xyzfile 0 1 opt.xyz
 </pre>
+
+Use the final geometry from the previous optimization as "*opt.xyz*" input.
+The keyworkd in the %output section prints the composition of the converged MOs. Look at them carefully!
 
 ## 3) Z+1 Δ-SCF
 Orca input:

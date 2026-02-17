@@ -3,7 +3,7 @@
 ## 1) Geometry Optimization
 Orca input:
 <pre>
-! B97 D3 def2-SVP def2/J Opt
+! BLYP D3 def2-SVP def2/J Opt
 
 %pal nprocs 2 end
 
@@ -15,7 +15,7 @@ Starting geometries in xyz format can be found in the directory "*molecules*".
 ## 2) SCF (orbital energies)
 Orca input:
 <pre>
-! B97 D3 def2-TZVP def2/J
+! BLYP D3 def2-TZVP def2/J
 
 %pal nprocs 2 end
 
@@ -30,7 +30,7 @@ The keyword in the *%output* section prints the composition of the converged MOs
 ## 3) Z+1 Δ-SCF
 Orca input:
 <pre>
-! B97 D3 def2-TZVP def2/J
+! BLYP D3 def2-TZVP def2/J
 
 %pal nprocs 2 end
 
@@ -44,7 +44,7 @@ The "*opt_modified.xyz*" file is a modified version of the previous "*opt.xyz*" 
 ## 4) Core-ionization Δ-SCF
 Orca input:
 <pre>
-! UKS B97 D3 def2-TZVP def2/J DeltaSCF NoDIIS MORead
+! UKS BLYP D3 def2-TZVP def2/J DeltaSCF NoDIIS MORead
 
 %pal nprocs 2 end
 

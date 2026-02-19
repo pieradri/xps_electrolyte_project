@@ -100,7 +100,7 @@ $BE_{C4} = E(SCF) - E(Z+1)_{C4 \rightarrow N}$
 
 Chemical shifts are obtained as differences between XPS peaks, as for example:
 
-$\DeltaBE = BE_{C5} - BE{C4}$
+$\Delta BE = BE_{C5} - BE{C4}$
 
 ## 4) Core-ionization Δ-SCF
 Orca input:
@@ -172,7 +172,7 @@ The +1.28 charge and -1.21 spin (an Alpha-spin electron has been removed) inidic
 
 Again, using the final total energy we estimate the position of a XPS peak (e.g. for carbon 4) with reference to the neutral state:
 
-$BE_{C4} = E(q=0) - E(q=+1)_{C4}$
+$BE_{C4} = E(0) - E(+1)_{C4}$
 
 ## 4) IP-EOM-CCSD
 Orca input:

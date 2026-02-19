@@ -12,7 +12,7 @@ Orca input:
 
 Starting geometries in xyz format can be found in the directory "*molecules*".
 
-## 2) SCF (orbital energies)
+## 2) SCF
 Orca input:
 <pre>
 ! BLYP D3 def2-TZVP def2/J
@@ -25,7 +25,30 @@ Orca input:
 </pre>
 
 Use the final geometry from the previous optimization as "*opt.xyz*" input.
-The keyword in the *%output* section prints the composition of the converged MOs. Look at them carefully!
+The keyword in the *%output* section prints the composition of the converged MOs (molecular orbitals). Look at them carefully!
+
+The MO energies (with opposite sign) from a converged Hartree-Fock are an estimate of the first ionization potential (in principle, this doesn't hold true for MOs from DFT!):
+<pre>
+----------------
+ORBITAL ENERGIES
+----------------
+
+  NO   OCC          E(Eh)            E(eV) 
+   0   2.0000     -26.352872      -717.0981 
+   1   2.0000     -26.352617      -717.0912 
+   2   2.0000     -26.350180      -717.0249 
+   3   2.0000     -20.635536      -561.5215 
+   4   2.0000     -20.584217      -560.1250 
+   5   2.0000     -11.527357      -313.6753 
+   6   2.0000     -11.419817      -310.7490 
+   7   2.0000     -11.312195      -307.8205 
+   8   2.0000     -11.239521      -305.8429 
+   9   2.0000      -1.748800       -47.5873 
+  10   2.0000      -1.651522       -44.9402 
+  11   2.0000      -1.651129       -44.9295 
+  12   2.0000      -1.504043       -40.9271 
+</pre>
+Core orbitals are atomic in nature, and their energies are very distant for different elements. Here, MOs from 5 to 8 are C 1s orbitals.
 
 ## 3) Z+1 Δ-SCF
 Orca input:
@@ -72,16 +95,16 @@ THRESHOLD FOR PRINTING IS 0.1%%
                  -26.35287 -26.35262 -26.35018 -20.63554 -20.58422 -11.52736
                    2.00000   2.00000   2.00000   2.00000   2.00000   2.00000
                   --------  --------  --------  --------  --------  --------
- 7 O  s               0.0       0.0       0.0      **99.6**       0.0       0.0
+ 7 O  s               0.0       0.0       0.0      99.6       0.0       0.0
  8 C  dx2y2           0.0       0.0       0.0       0.0       0.1       0.0
  8 C  dxy             0.0       0.0       0.0       0.1       0.0       0.1
- 9 O  s               0.0       0.0       0.0       0.0      **99.5**       0.0
-10 C  s               0.0       0.0       0.0       0.0       0.0      **98.5**
-11 F  s               0.1      **99.7**       0.0       0.0       0.0       0.0
+ 9 O  s               0.0       0.0       0.0       0.0      99.5       0.0
+10 C  s               0.0       0.0       0.0       0.0       0.0      98.5
+11 F  s               0.1      99.7       0.0       0.0       0.0       0.0
 11 F  dyz             0.0       0.0       0.0       0.0       0.0       0.2
-12 F  s               0.0       0.0      **99.8**       0.0       0.0       0.0
+12 F  s               0.0       0.0      99.8       0.0       0.0       0.0
 12 F  dxy             0.0       0.0       0.0       0.0       0.0       0.2
-13 F  s              **99.7**       0.1       0.0       0.0       0.0       0.0
+13 F  s              99.7       0.1       0.0       0.0       0.0       0.0
 13 F  pz              0.0       0.0       0.0       0.0       0.0       0.1
 13 F  dz2             0.0       0.0       0.0       0.0       0.0       0.1
 13 F  dyz             0.0       0.0       0.0       0.0       0.0       0.1

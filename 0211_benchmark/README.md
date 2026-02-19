@@ -86,7 +86,6 @@ The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previou
 
 The *IonizeAlpha* is the number of the orbital which will be ionized. In order to choose this value, look at the orbitals composition printed in the output of the original SCF calculation:
 <pre>
-
 ------------------------------------------
 LOEWDIN REDUCED ORBITAL POPULATIONS PER MO
 -------------------------------------------
@@ -110,6 +109,28 @@ THRESHOLD FOR PRINTING IS 0.1%%
 13 F  dyz             0.0       0.0       0.0       0.0       0.0       0.1
 </pre>
 Core orbitals typically exhibit a ~99% composition from a single orbital of a single atom.
+
+It is important to check that the SCF finally converged to the expected ionized state. A fast way to understand what happened to the electrons is to look at population analysis:
+<pre>
+--------------------------------------------
+MULLIKEN ATOMIC CHARGES AND SPIN POPULATIONS
+--------------------------------------------
+   0 C :   -0.734821    0.000755
+   1 H :    0.227135    0.001353
+   2 H :    0.201763    0.000201
+   3 H :    0.202923   -0.001607
+   4 C :    0.096177    0.010767
+   5 H :    0.240978    0.000538
+   6 H :    0.243608    0.001327
+   7 O :   -0.290966    0.004515
+   8 C :    0.421200    0.029832
+   9 O :   -0.395920   -0.028231
+  10 C :    1.287563   -1.210120
+  11 F :   -0.165779    0.066212
+  12 F :   -0.164006    0.057346
+  13 F :   -0.169854    0.067112
+</pre>
+The +1.28 charge and -1.21 spin (an Alpha-spin electron has been removed) inidicate that the hole state is mainly localized on C 10.
 
 ## 4) IP-EOM-CCSD
 Orca input:

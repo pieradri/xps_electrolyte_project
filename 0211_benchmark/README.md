@@ -62,7 +62,26 @@ Orca input:
 * xyzfile 0 2 opt_modified.xyz
 </pre>
 
-The "*opt_modified.xyz*" file is a modified version of the previous "*opt.xyz*" where an atomic label is properly changed from the *Z* chemical element to the *Z+1* element. Atomic coordinates are left unchanged. Please, look at the charge and multiplicity values: if in the "base" calculation we had "**xyzfile 0 1*", with an extra-electron in the Z+1 calculation we will have "**xyzfile 0 2*"
+The "*opt_modified.xyz*" file is a modified version of the previous "*opt.xyz*" where an atomic label is properly changed from the *Z* chemical element to the *Z+1* element. Atomic coordinates are left unchanged, as in this example:
+<pre>
+# ORIGINAL COORDINATES
+
+C     -2.779600    1.351898   -0.000099
+C     -1.463458    1.315906    0.000408
+H     -3.371149    0.626498    0.534444
+H     -3.329769    2.109340   -0.534361
+H     -0.913299    0.558130    0.534206
+H     -0.871919    2.040972   -0.534598
+
+# Z+1 COORDINATES
+N     -2.779600    1.351898   -0.000099
+C     -1.463458    1.315906    0.000408
+H     -3.371149    0.626498    0.534444
+H     -3.329769    2.109340   -0.534361
+H     -0.913299    0.558130    0.534206
+H     -0.871919    2.040972   -0.534598
+</pre>
+Please, look at the charge and multiplicity values: if in the "base" calculation we had "**xyzfile 0 1*", with an extra-electron in the Z+1 calculation we will have "**xyzfile 0 2*"
 
 ## 4) Core-ionization Δ-SCF
 Orca input:

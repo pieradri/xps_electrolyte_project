@@ -100,7 +100,7 @@ $BE_{C4} = E(SCF) - E(Z+1)_{C4 \rightarrow N}$
 
 Chemical shifts are obtained as differences between XPS peaks, as for example:
 
-$\Delta BE = BE_{C5} - BE{C4}$
+$\Delta BE = BE_{C5} - BE_{C4}$
 
 ## 4) Core-ionization Δ-SCF
 Orca input:

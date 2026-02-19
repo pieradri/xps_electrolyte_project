@@ -179,7 +179,7 @@ end
 </pre>
 
 The keyword *NRoots* specifies the number of calculated ionized states (e.g. 4 if the molecule has 4 C atoms). The two values in *CVSOrb* limit the orbitals window for core-valence separation: setting this to *5,8* means that we restrain the orbitals window from MO 5 to MO 8 (again: look at the orbitals compèosition!). *CoreHole* is the 1st state from which roots are counted: in this case, the lowest C 1s orbital is 5, and we are not interested in core orbitals from other elements. Others keywords should not be modified. The roots of the CC problem are printed in the output: they represent the ionization potential from the corresponding orbital:
-<pre
+<pre>
 ----------------------
 EOM-CCSD RESULTS (RHS)
 ----------------------

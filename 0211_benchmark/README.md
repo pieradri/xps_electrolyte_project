@@ -36,7 +36,7 @@ Orca input:
 
 %output Print[P_ReducedOrbPopMO_L] 1 end
 
-* xyzfile +1 1 opt_modified.xyz
+* xyzfile 0 1 opt_modified.xyz
 </pre>
 
 The "*opt_modified.xyz*" file is a modified version of the previous "*opt.xyz*" where an atomic label is properly changed from the *Z* chemical element to the *Z+1* element. Atomic coordinates are left unchanged.

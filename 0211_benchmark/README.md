@@ -178,4 +178,30 @@ end
 * xyzfile 0 1 opt.xyz
 </pre>
 
-The keyword *NRoots* specifies the number of calculated ionized states. The two values in *CVSOrb* limit the orbitals window for core-valence separation. *CoreHole* is the 1st state from which roots are counted. The *IP-EOM-DLPNO-CCSD* approximation can be substituted with *bt-PNO-IP-EOM-CCSD* for more accurate results, but the calculation may be much slower!
+The keyword *NRoots* specifies the number of calculated ionized states (e.g. 4 if the molecule has 4 C atoms). The two values in *CVSOrb* limit the orbitals window for core-valence separation: setting this to *5,8* means that we restrain the orbitals window from MO 5 to MO 8 (again: look at the orbitals compèosition!). *CoreHole* is the 1st state from which roots are counted: in this case, the lowest C 1s orbital is 5, and we are not interested in core orbitals from other elements. Others keywords should not be modified. The roots of the CC problem are printed in the output: they represent the ionization potential from the corresponding orbital:
+<pre
+----------------------
+EOM-CCSD RESULTS (RHS)
+----------------------
+
+IROOT=  1: 11.071691 au   301.276 eV 2429955.4 cm**-1
+  Amplitude    Excitation
+   0.675020     5 -> x
+Percentage singles character=    101.13
+
+IROOT=  2: 10.978268 au   298.734 eV 2409451.4 cm**-1
+  Amplitude    Excitation
+  -0.676977     6 -> x
+Percentage singles character=    101.04
+
+IROOT=  3: 10.848096 au   295.192 eV 2380881.8 cm**-1
+  Amplitude    Excitation
+  -0.674671     7 -> x
+Percentage singles character=    101.14
+
+IROOT=  4: 10.777477 au   293.270 eV 2365382.7 cm**-1
+  Amplitude    Excitation
+  -0.675095     8 -> x
+Percentage singles character=    101.15  
+</pre>
+The *IP-EOM-DLPNO-CCSD* approximation can be substituted with *bt-PNO-IP-EOM-CCSD* for more accurate results, but the calculation may be much slower! Using basis sets smaller than a TZ is definitely not recommendable.

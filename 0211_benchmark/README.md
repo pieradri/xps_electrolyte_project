@@ -84,7 +84,7 @@ end
 
 The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation.
 
-The *IonizeAlpha* is the number of the orbital which will be ionized. In order to choose this value, look at the orbitals composition printed in the output of the original SCF calculation:
+The *IonizeAlpha* is the number of the orbital which will be ionized. In order to choose this value, look at the orbitals composition printed in the output of the original (non ionized!) SCF calculation:
 <pre>
 ------------------------------------------
 LOEWDIN REDUCED ORBITAL POPULATIONS PER MO

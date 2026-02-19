@@ -59,7 +59,34 @@ end
 * xyzfile 0 1 opt.xyz
 </pre>
 
-The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation. In order to choose the *IonizeAlpha* value, look at the orbitals composition.
+The "*scf_converged.gbw*" should be a copy of the *.gbw* produced by the previous SCF calculation.
+
+In order to choose the *IonizeAlpha* value, look at the orbitals composition printed in the output of the original SCF calculation:
+<pre>
+
+------------------------------------------
+LOEWDIN REDUCED ORBITAL POPULATIONS PER MO
+-------------------------------------------
+THRESHOLD FOR PRINTING IS 0.1%%
+                      0         1         2         3         4         5   
+                 -26.35287 -26.35262 -26.35018 -20.63554 -20.58422 -11.52736
+                   2.00000   2.00000   2.00000   2.00000   2.00000   2.00000
+                  --------  --------  --------  --------  --------  --------
+ 7 O  s               0.0       0.0       0.0      __99.6__       0.0       0.0
+ 8 C  dx2y2           0.0       0.0       0.0       0.0       0.1       0.0
+ 8 C  dxy             0.0       0.0       0.0       0.1       0.0       0.1
+ 9 O  s               0.0       0.0       0.0       0.0      __99.5__       0.0
+10 C  s               0.0       0.0       0.0       0.0       0.0      __98.5__
+11 F  s               0.1      __99.7__       0.0       0.0       0.0       0.0
+11 F  dyz             0.0       0.0       0.0       0.0       0.0       0.2
+12 F  s               0.0       0.0      __99.8__       0.0       0.0       0.0
+12 F  dxy             0.0       0.0       0.0       0.0       0.0       0.2
+13 F  s              __99.7__       0.1       0.0       0.0       0.0       0.0
+13 F  pz              0.0       0.0       0.0       0.0       0.0       0.1
+13 F  dz2             0.0       0.0       0.0       0.0       0.0       0.1
+13 F  dyz             0.0       0.0       0.0       0.0       0.0       0.1
+</pre>
+Core orbitals typically exhibit a ~99% composition from a single orbital of a single atom.
 
 ## 4) IP-EOM-CCSD
 Orca input:

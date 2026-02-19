@@ -58,6 +58,7 @@ FINAL SINGLE POINT ENERGY      -591.688633763406
 -------------------------   --------------------
 
 </pre>
+This is the quantity we look at for calculating energy differences.
 
 ## 3) Z+1 Δ-SCF
 Orca input:

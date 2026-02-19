@@ -100,7 +100,7 @@ $BE_{C4} = E(SCF) - E(Z+1)_{C4 \rightarrow N}$
 
 Chemical shifts are obtained as differences between XPS peaks, as for example:
 
-$/DeltaBE = BE_{C5} - BE{C4}$
+$\DeltaBE = BE_{C5} - BE{C4}$
 
 ## 4) Core-ionization Δ-SCF
 Orca input:
@@ -169,6 +169,10 @@ MULLIKEN ATOMIC CHARGES AND SPIN POPULATIONS
   13 F :   -0.169854    0.067112
 </pre>
 The +1.28 charge and -1.21 spin (an Alpha-spin electron has been removed) inidicate that the hole state is mainly localized on C 10.
+
+Again, using the final total energy we estimate the position of a XPS peak (e.g. for carbon 4) with reference to the neutral state:
+
+$BE_{C4} = E(q=0) - E(q=+1)_{C4}$
 
 ## 4) IP-EOM-CCSD
 Orca input:

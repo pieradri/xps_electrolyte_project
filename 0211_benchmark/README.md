@@ -94,7 +94,7 @@ H     -0.871919    2.040972   -0.534598
 </pre>
 Please, look at the charge and multiplicity values: if in the "base" calculation we had "**xyzfile 0 1*", with an extra-electron in the Z+1 calculation we will have "**xyzfile 0 2*".
 
-Look only for the final total energy! The energy difference for one XPS peak (e.g. for carbon 4) will be:
+Look only for the final total energy! The electron binding energy (BE) corresponding to a XPS peak (e.g. for carbon 4) will be:
 
 $BE_{C4} = E(SCF) - E(Z+1)_{C4 \rightarrow N}$
 
